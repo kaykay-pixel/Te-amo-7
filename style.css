@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #4b8b3b; /* Soft green text */
+    padding: 40px;
+}
+
+.letter-container, .message-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Keeps readability */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4b8b3b; /* Soft green for headings */
+}
+
+p {
+    color: #4b8b3b; /* Matching green for paragraph text */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4b8b3b; /* Soft green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+.button:hover {
+    background: #3a6f2b; /* Darker green when hovered */
+}
+
+.fade-out {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.highlighted-text {
+    font-size: 24px; /* Increases size */
+    font-weight: bold; /* Makes it bold */
+    color: #4b8b3b; /* Soft green to match theme */
+}

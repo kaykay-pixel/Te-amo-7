@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Autoplay Music -->
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+<div id="sparkles-container"></div>
+
+    <div class="letter-container">
+        <h1>My Love Letter to You 💌</h1>
+        <p>Dear عبد المالك,<br><br>
+        From the moment we met, every day has been brighter because of you. You are my joy, my safe place, and my favorite person. I have so much to say—so click below to read my heart’s message.<br><br>
+        Love always,<br>
+        Kaykay
+        </p>
+        <a href="message.html" class="button" onclick="fadeOut()">Read More</a>
+    </div> 
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+<button onclick="document.getElementById('bgMusic').play()">click here :)</button>
+</div>
+<div class="hidden-notes">
+    <span class="heart" onclick="showMessage('message1')">❤️</span>
+    <span class="heart" onclick="showMessage('message2')">❤️</span>
+    <span class="heart" onclick="showMessage('message3')">❤️</span>
+    
+    <p id="message1" class="hidden">You are my greatest love story. 💕</p>
+    <p id="message2" class="hidden">Every day with you is my favorite adventure. ✨</p>
+    <p id="message3" class="hidden">I am so lucky to love and be loved by you. ❤️</p>
+</div>
+<div class="doodle-wall">
+    <h2>Draw a Love Message for Me! 🎨💖</h2>
+    <canvas id="canvas" width="500" height="400"></canvas>
+    <button onclick="clearCanvas()">Clear</button>
+</div>
+<div class="color-picker">
+    <label for="color">Choose a Brush Color: </label>
+    <select id="color" onchange="changeColor()">
+        <option value="#4b8b3b">Green</option>
+        <option value="#d9534f">Red</option>
+        <option value="#4285F4">Blue</option>
+        <option value="#f4c842">Yellow</option>
+        <option value="#a832a8">Purple</option>
+        <option value="#000000">Black</option>
+    </select>
+</div>
+<script defer src="script.js"></script>
+</body>
+</html>
